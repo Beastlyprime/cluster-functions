@@ -1,2 +1,2 @@
 # cluster-functions
-Some useful functions for clustering
+Some useful but simple functions for clustering in python.

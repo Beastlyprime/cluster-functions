@@ -28,29 +28,29 @@ Note that the first line in the file will turn into tags. Use'.keys()' to show a
         array([[1, 2],
                [3, 4],
                [5, 6]])
-           
+
 * [numpy.block](https://docs.scipy.org/doc/numpy/reference/generated/numpy.block.html#numpy.block)
     : Assemble an nd-array from nested lists of blocks.
-    
+
         A = np.ones((2, 2), int)
         >>> B = 2 * A
         >>> np.block([A, B])
         array([[1, 1, 2, 2],
                [1, 1, 2, 2]])    
-               
+
 * [numpy.reshape](https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html)
     ：Gives a new shape to an array without changing its data.
 
         a = a.reshape((-1,1))
-        
+
 * [numpy.ndarray.astype](https://docs.scipy.org/doc/numpy/reference/generated/numpy.ndarray.astype.html)
     : Copy of the array, cast to a specified type.
-    
+
         x = x.astype(int)
 
 * [numpy.delete(arr, obj, axis=None)](https://docs.scipy.org/doc/numpy/reference/generated/numpy.delete.html)
     : Return a new array with sub-arrays along an axis deleted.
-    
+
         >>> a
         array([1, 1])
         >>> np.delete(a, 0)
@@ -74,13 +74,13 @@ return n most common items, as a list of tuples:(item, its counts).
     1
 
 #### List or array
-#####[cmp(a, b)](https://sjolzy.cn/Python-39-s-built-in-comparison-function-cmp-comparison-principle-analysis.html)
-Built-in function in python2. 
+##### [cmp(a, b)](https://sjolzy.cn/Python-39-s-built-in-comparison-function-cmp-comparison-principle-analysis.html)
+Built-in function in python2.
 
 Compare the two objects x and y and return an integer according to the outcome. The return value is negative if x < y, zero if x == y and strictly positive if x > y.
 
-##Built-in KMeans
-#### [sklearn.cluster.KMeans](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+## Built-in KMeans
+####  [sklearn.cluster.KMeans](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
 Use K-means algorithm
 
     >>> from sklearn.cluster import KMeans
@@ -95,4 +95,3 @@ Use K-means algorithm
     >>> kmeans.cluster_centers_
     array([[ 1.,  2.],
            [ 4.,  2.]])
-
